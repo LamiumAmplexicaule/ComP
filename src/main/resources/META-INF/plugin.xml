@@ -1,0 +1,63 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>net.henbit.comp</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>Comp</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor email="47999601+LamiumAmplexicaule@users.noreply.github.com" url="https://github.com/LamiumAmplexicaule/">
+        Lamium Amplexicaule
+    </vendor>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.plugins.terminal</depends>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+
+    </extensions>
+
+    <actions>
+        <group
+                id="net.henbit.comp.action.CompeteActions"
+                text="ComP"
+                popup="true">
+            <add-to-group
+                    group-id="ToolsMenu"
+                    anchor="after"
+                    relative-to-action="net.henbit.comp.action.CompeteActions.RunNewCommandAction"/>
+            <action id="net.henbit.comp.action.CompeteActions.RunInitCommandAction"
+                    class="net.henbit.comp.actions.RunInitCommandAction" text="Init"
+                    description="Run init command">
+                <keyboard-shortcut keymap="$default" first-keystroke="control alt I"/>
+            </action>
+            <action id="net.henbit.comp.action.CompeteActions.RunNewCommandAction"
+                    class="net.henbit.comp.actions.RunNewCommandAction" text="New"
+                    description="Run new command">
+                <keyboard-shortcut keymap="$default" first-keystroke="control alt N"/>
+            </action>
+            <action id="net.henbit.comp.action.CompeteActions.RunOpenCommandAction"
+                    class="net.henbit.comp.actions.RunOpenCommandAction" text="Open Problems"
+                    description="Run open command">
+                <keyboard-shortcut keymap="$default" first-keystroke="control alt O"/>
+            </action>
+            <action id="net.henbit.comp.action.CompeteActions.RunTestCommandAction"
+                    class="net.henbit.comp.actions.RunTestCommandAction" text="Test"
+                    description="Run test command">
+                <keyboard-shortcut keymap="$default" first-keystroke="control alt T"/>
+            </action>
+            <action id="net.henbit.comp.action.CompeteActions.RunSubmitCommandAction"
+                    class="net.henbit.comp.actions.RunSubmitCommandAction" text="Submit"
+                    description="Run submit command">
+                <keyboard-shortcut keymap="$default" first-keystroke="control alt S"/>
+            </action>
+        </group>
+
+    </actions>
+</idea-plugin>
