@@ -31,11 +31,13 @@ class RunOpenCommandAction : AnAction() {
                         if (split.isEmpty() || split.size < 4) return
                         if (!current.name.contains(".rs")) return
                         val contestName = split[split.lastIndex - 3]
+                        if (!current.name.contains(".rs")) return
+                        val taskName = current.name.substringBeforeLast('.')
 
                         val widget = Utils.getShellTerminalWidget(TAB_NAME, project)
 
                         widget.executeCommand(
-                            "cargo compete open --package $contestName"
+                            "cargo compete open --bin $taskName --package $contestName"
                         )
 
                     }

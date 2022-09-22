@@ -43,7 +43,7 @@
                 <keyboard-shortcut keymap="$default" first-keystroke="control alt N"/>
             </action>
             <action id="net.henbit.comp.action.CompeteActions.RunOpenCommandAction"
-                    class="net.henbit.comp.actions.RunOpenCommandAction" text="Open Problems"
+                    class="net.henbit.comp.actions.RunOpenCommandAction" text="Open Problem"
                     description="Run open command">
                 <keyboard-shortcut keymap="$default" first-keystroke="control alt O"/>
             </action>

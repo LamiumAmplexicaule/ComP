@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - Cargo.toml is now also updated when the New command is executed.
+### Changed
+- Open the page in question that corresponds to the editor you have open now
 
 ## [0.1.0]
 ### Added
