@@ -15,6 +15,13 @@ version = properties("pluginVersion")
 
 repositories {
     mavenCentral()
+    maven {
+        url = uri("https://jitpack.io")
+    }
+}
+
+dependencies {
+    implementation("cc.ekblad:4koma:1.1.0")
 }
 
 // Set the JVM language level used to compile sources and generate files

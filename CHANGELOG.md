@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 ## [Unreleased]
+### Added
+- Cargo.toml is now also updated when the New command is executed.
 
 ## [0.1.0]
 ### Added
