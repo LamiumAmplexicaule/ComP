@@ -5,7 +5,7 @@ CLion plugin for cargo-compete.
 
 It makes the following cargo-compete commands easily available.
 - Retrieve contest test cases and create packages
-- Open the page in question in a browser
+- Open the question page in a browser
 - Test the code
 - Submit
 <!-- Plugin description end -->
