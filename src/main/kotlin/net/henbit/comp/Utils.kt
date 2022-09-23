@@ -19,6 +19,9 @@ class Utils {
                 null -> terminalView.createLocalShellWidget(project.basePath, tabName)
                 else -> TerminalView.getWidgetByContent(content) as ShellTerminalWidget
             }
+            widget.terminalTitle.change {
+                this.userDefinedTitle = tabName
+            }
             return widget
         }
     }
