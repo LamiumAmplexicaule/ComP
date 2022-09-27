@@ -1,7 +1,7 @@
 # ComP
 
 <!-- Plugin description -->
-CLion plugin for cargo-compete.
+CLion plugin for [cargo-compete](https://github.com/qryxip/cargo-compete).
 
 It makes the following cargo-compete commands easily available.
 - Retrieve contest test cases and create packages
