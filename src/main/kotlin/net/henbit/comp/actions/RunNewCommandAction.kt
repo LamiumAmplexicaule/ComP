@@ -9,7 +9,7 @@ import cc.ekblad.toml.tomlSerializer
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.diagnostic.Logger
-import com.intellij.util.io.exists
+import kotlin.io.path.exists
 import io.ktor.utils.io.errors.*
 import net.henbit.comp.Utils
 import net.henbit.comp.dialog.RunNewCommandDialog

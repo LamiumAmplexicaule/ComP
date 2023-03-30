@@ -5,11 +5,7 @@ import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.ui.ComboBox
 import com.intellij.openapi.ui.DialogWrapper
-import com.intellij.ui.dsl.builder.Cell
-import com.intellij.ui.dsl.builder.MutableProperty
-import com.intellij.ui.dsl.builder.RightGap
-import com.intellij.ui.dsl.builder.panel
-import com.intellij.ui.dsl.gridLayout.HorizontalAlign
+import com.intellij.ui.dsl.builder.*
 import java.io.BufferedReader
 import java.io.InputStream
 import java.io.InputStreamReader
@@ -70,7 +66,7 @@ class RunNewCommandDialog(project: Project) : DialogWrapper(project) {
                 comboBox(contestNames)
                     .gap(RightGap.SMALL)
                     .resizableColumn()
-                    .horizontalAlign(HorizontalAlign.FILL)
+                    .align(Align.FILL)
                     .bindItem(contestProperty)
             }
         }
